@@ -215,7 +215,7 @@ alias _kaonashi_crypt_rules='john --session=yescrypt_run --wordlist=/pentesting/
 alias _kaonashi_sha1='john --wordlist=/pentesting/diccionarios/kaonashi.txt --format=raw-sha1 /pentesting/hash.txt'
 alias _kaonashi_sha256='john --wordlist=/pentesting/diccionarios/kaonashi.txt --format=raw-sha256 /pentesting/hash.txt'
 alias _kaonashi_sha512='john --wordlist=/pentesting/diccionarios/kaonashi.txt --format=sha512crypt /pentesting/hash.txt'
-alias tshark='tshark -i eth0 -f "not host 192.168.1.202"'
+alias _tshark='tshark -i eth0 -f "not host 192.168.1.202"'
 
 export VISUAL=vim
 export EDITOR=vim
@@ -280,7 +280,7 @@ echo "MMMMMMMMXd:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;::dXWMMMMMMMM
 echo "MMMMMMMWOc:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;::xNMMMMMMMMMM"
 echo "MMMMMMMNd:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;::l0WMMMMMMMM"
 echo "MMMMMMWKo;;;;;;;;;;;;;;;;;;:;;:clickonce;::;;;;;;;;;;;;;;;011111;:cdKNMMMMMM"
-echo "MMMMMMWKo;;;;;;;;;;;;;;;;;;;;;;;;xXxhack;:;;;;;;;;;;sizeoxO90x2;::cxXMMMMMMM"
+echo "MMMMMMWKo;;;;;;;;;;;;;;;;;;;;;;;;xXxhack;:;;;;;;;avadakedavrax3;::cxXMMMMMMM"
 echo -e "MMMMMMMXo:;;;;;;;;;;;;;;;;;;;;;;;:loolx1:;;;;;;;;;;;\e[1;35m_liatris_.sh\e[0m;::xNMMMMMMM"
 echo "MMMMMMMNx:;;;;;;;;;;;;;;;;;;;;;;;:00000d:;;;;;;;;;;;;;;;;:0oNNee;::oKMMMMMMM"
 echo "MMMMMMMW0l:;;;;;;;;;;;;;;;;;;;;;;:00000O:;;;;;;;;;;;;;;;;:00000l;::oKWMMMMMM"
