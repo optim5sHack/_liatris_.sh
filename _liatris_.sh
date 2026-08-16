@@ -25,7 +25,7 @@ read -p "¿Quieres instalar herramientas básicas? (s/n): " respuestainstalacion
 
 if [[ "$respuestainstalacionesbasicas" =~ ^[sS]$ ]]; then
     apt install -y nmap tcpdump\
-    iputils-ping lm-sensors iproute2 sudo vim iproute2 curl btop iftop lsof ssh \
+    iputils-ping lm-sensors iproute2 sudo vim iproute2 curl btop iftop lsof openssh-server \
     lsb-release wget sysstat snmp snmpd tcpdump \
     ngrep iptraf-ng mlocate plocate tar gzip tree ca-certificates \
     screen man-db mailutils dnsutils rsyslog locales snmp snmpd smartmontools
@@ -54,6 +54,9 @@ echo -e "${YELLOW}Configuración ssh: ${NC}"
 read -p "¿Quieres configurar ssh? (s/n): " respuestassh
 
 if [[ "$respuestassh" =~ ^[sS]$ ]]; then
+# Evita suspensión del equipo
+systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+# Configuración SSH
 sed -i '/#PermitRootLogin/a PermitRootLogin yes' /etc/ssh/sshd_config
 sed -i '/#AddressFamily any/a AddressFamily inet' /etc/ssh/sshd_config
 sed -i '/#ListenAddress 0.0.0.0/a ListenAddress 0.0.0.0' /etc/ssh/sshd_config
