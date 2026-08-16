@@ -25,7 +25,7 @@ read -p "¿Quieres instalar herramientas básicas? (s/n): " respuestainstalacion
 
 if [[ "$respuestainstalacionesbasicas" =~ ^[sS]$ ]]; then
     apt install -y nmap tcpdump\
-    iputils-ping lm-sensors iproute2 sudo vim iproute2 curl btop iftop lsof \
+    iputils-ping lm-sensors iproute2 sudo vim iproute2 curl btop iftop lsof ssh \
     lsb-release wget sysstat snmp snmpd tcpdump \
     ngrep iptraf-ng mlocate plocate tar gzip tree ca-certificates \
     screen man-db mailutils dnsutils rsyslog locales snmp snmpd smartmontools
