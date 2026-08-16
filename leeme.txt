@@ -1,9 +1,9 @@
 # instalación en archivo
-wget -O liatris.sh "https://raw.githubusercontent.com/optim5sHack/_liatris_.sh/refs/heads/main/_liatris_.sh"
+wget -O _liatris_.sh "https://raw.githubusercontent.com/optim5sHack/_liatris_.sh/refs/heads/main/_liatris_.sh"
 
 # permisos
-chmod +x liatris.sh
+chmod +x _liatris_.sh
 
 # ejecucutar script
-./liatris.sh
-  > S
+./_liatris_.sh
+  > s
